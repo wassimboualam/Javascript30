@@ -19,7 +19,6 @@
   const video = document.querySelector("video");
   const speed = document.querySelector(".speed");
   const speedBar = document.querySelector(".speed-bar");
-  const clamp = (val, min=0, max=infinity) => Math.min(Math.max(val, min), max);
   function handleMove(e) {
     const y = e.pageY - this.offsetTop;
     const percent = y / this.offsetHeight;
